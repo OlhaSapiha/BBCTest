@@ -118,10 +118,16 @@ this.ScenarioInitialize(scenarioInfo);
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("CheckLoremIpsumIsGeneratedWithCorrectSizeOfWords")]
-        public virtual void CheckLoremIpsumIsGeneratedWithCorrectSizeOfWords()
+        [NUnit.Framework.TestCaseAttribute("10", null)]
+        [NUnit.Framework.TestCaseAttribute("-1", null)]
+        [NUnit.Framework.TestCaseAttribute("0", null)]
+        [NUnit.Framework.TestCaseAttribute("5", null)]
+        [NUnit.Framework.TestCaseAttribute("20", null)]
+        public virtual void CheckLoremIpsumIsGeneratedWithCorrectSizeOfWords(string amount, string[] exampleTags)
         {
-            string[] tagsOfScenario = ((string[])(null));
+            string[] tagsOfScenario = exampleTags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            argumentsOfScenario.Add("amount", amount);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CheckLoremIpsumIsGeneratedWithCorrectSizeOfWords", null, tagsOfScenario, argumentsOfScenario);
 #line 9
 this.ScenarioInitialize(scenarioInfo);
@@ -143,29 +149,156 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
-                            "amount"});
-                table1.AddRow(new string[] {
-                            "10"});
-                table1.AddRow(new string[] {
-                            "-1"});
-                table1.AddRow(new string[] {
-                            "0"});
-                table1.AddRow(new string[] {
-                            "5"});
-                table1.AddRow(new string[] {
-                            "20"});
 #line 10
- testRunner.Given("the expected <amount> of words after generation", ((string)(null)), table1, "Given ");
+ testRunner.Given(string.Format("the expected {0} of radio button after generation", amount), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 17
+#line 11
  testRunner.When("user generate with radio button \'words\' and given amount", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 18
+#line 12
  testRunner.And("user goes to Generate Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 19
+#line 13
  testRunner.Then("the expected amount of words is displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("CheckLoremIpsumIsGeneratedWithCorrectSizeOfBytes")]
+        [NUnit.Framework.TestCaseAttribute("10", null)]
+        [NUnit.Framework.TestCaseAttribute("-1", null)]
+        [NUnit.Framework.TestCaseAttribute("0", null)]
+        [NUnit.Framework.TestCaseAttribute("20", null)]
+        public virtual void CheckLoremIpsumIsGeneratedWithCorrectSizeOfBytes(string amount, string[] exampleTags)
+        {
+            string[] tagsOfScenario = exampleTags;
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            argumentsOfScenario.Add("amount", amount);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CheckLoremIpsumIsGeneratedWithCorrectSizeOfBytes", null, tagsOfScenario, argumentsOfScenario);
+#line 23
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 24
+ testRunner.Given(string.Format("the expected {0} of radio button after generation", amount), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 25
+ testRunner.When("user generate with radio button \'bytes\' and given amount", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 26
+ testRunner.And("user goes to Generate Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 27
+ testRunner.Then("the expected amount of bytes is displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("CheckUnchekedBoxResultInTextDoesntStartWithLoremIpsum")]
+        public virtual void CheckUnchekedBoxResultInTextDoesntStartWithLoremIpsum()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CheckUnchekedBoxResultInTextDoesntStartWithLoremIpsum", null, tagsOfScenario, argumentsOfScenario);
+#line 36
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 37
+ testRunner.Given("the expected start of the paragraph \'Lorem ipsum dolor sit amet, consectetur adip" +
+                        "iscing elit\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 38
+ testRunner.When("user generate with unchecked box", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 39
+ testRunner.Then("the paragraph doesn\'t start with the expected sentence", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("CheckRandomlyGeneratedTextParagraphsContainTheWord")]
+        public virtual void CheckRandomlyGeneratedTextParagraphsContainTheWord()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CheckRandomlyGeneratedTextParagraphsContainTheWord", null, tagsOfScenario, argumentsOfScenario);
+#line 41
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 42
+ testRunner.Given("the expected word paragraph contains \'lorem\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 43
+ testRunner.And("how many times checked \'10\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 44
+ testRunner.When("user goes to Generate Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 45
+ testRunner.And("user counts how many paragraphs contains the given word", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 46
+ testRunner.And("user returns to Home Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 47
+ testRunner.Then("the average value of paragraphs generated given times containing the given word s" +
+                        "hould be between \'2\' and \'3\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

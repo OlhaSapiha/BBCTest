@@ -102,26 +102,26 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
                             "Key",
                             "Value"});
-                table2.AddRow(new string[] {
+                table1.AddRow(new string[] {
                             "Tell",
                             ""});
-                table2.AddRow(new string[] {
+                table1.AddRow(new string[] {
                             "Name",
                             "Olha"});
-                table2.AddRow(new string[] {
+                table1.AddRow(new string[] {
                             "Email",
                             "osapiha5553@gmail.com"});
-                table2.AddRow(new string[] {
+                table1.AddRow(new string[] {
                             "Contact",
                             "+380931256769"});
-                table2.AddRow(new string[] {
+                table1.AddRow(new string[] {
                             "Location",
                             "Kyiv"});
 #line 5
- testRunner.Given("the credentials and over16Box \'true\' and termsBox \'true\' to submit the form", ((string)(null)), table2, "Given ");
+ testRunner.Given("the credentials and over16Box \'true\' and termsBox \'true\' to submit the form", ((string)(null)), table1, "Given ");
 #line hidden
 #line 12
  testRunner.When("user goes to the News page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -172,26 +172,26 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
                             "Key",
                             "Value"});
-                table3.AddRow(new string[] {
+                table2.AddRow(new string[] {
                             "Tell",
                             "Hello!"});
-                table3.AddRow(new string[] {
+                table2.AddRow(new string[] {
                             "Name",
                             "Olha"});
-                table3.AddRow(new string[] {
+                table2.AddRow(new string[] {
                             "Email",
                             "osapiha5553"});
-                table3.AddRow(new string[] {
+                table2.AddRow(new string[] {
                             "Contact",
                             "+380931256769"});
-                table3.AddRow(new string[] {
+                table2.AddRow(new string[] {
                             "Location",
                             "Kyiv"});
 #line 20
- testRunner.Given("the credentials and over16Box \'true\' and termsBox \'true\' to submit the form", ((string)(null)), table3, "Given ");
+ testRunner.Given("the credentials and over16Box \'true\' and termsBox \'true\' to submit the form", ((string)(null)), table2, "Given ");
 #line hidden
 #line 27
  testRunner.When("user goes to the News page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -242,26 +242,26 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
                             "Key",
                             "Value"});
-                table4.AddRow(new string[] {
+                table3.AddRow(new string[] {
                             "Tell",
                             "Hello!"});
-                table4.AddRow(new string[] {
+                table3.AddRow(new string[] {
                             "Name",
                             "Olha"});
-                table4.AddRow(new string[] {
+                table3.AddRow(new string[] {
                             "Email",
                             "osapiha5553@gmail.com"});
-                table4.AddRow(new string[] {
+                table3.AddRow(new string[] {
                             "Contact",
                             "+380931256769"});
-                table4.AddRow(new string[] {
+                table3.AddRow(new string[] {
                             "Location",
                             "Kyiv"});
 #line 35
- testRunner.Given("the credentials and over16Box \'true\' and termsBox \'false\' to submit the form", ((string)(null)), table4, "Given ");
+ testRunner.Given("the credentials and over16Box \'true\' and termsBox \'false\' to submit the form", ((string)(null)), table3, "Given ");
 #line hidden
 #line 42
  testRunner.When("user goes to the News page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -312,26 +312,26 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
                             "Key",
                             "Value"});
-                table5.AddRow(new string[] {
+                table4.AddRow(new string[] {
                             "Tell",
                             "Hello!"});
-                table5.AddRow(new string[] {
+                table4.AddRow(new string[] {
                             "Name",
                             ""});
-                table5.AddRow(new string[] {
+                table4.AddRow(new string[] {
                             "Email",
                             "osapiha5553@gmail.com"});
-                table5.AddRow(new string[] {
+                table4.AddRow(new string[] {
                             "Contact",
                             "+380931256769"});
-                table5.AddRow(new string[] {
+                table4.AddRow(new string[] {
                             "Location",
                             "Kyiv"});
 #line 50
- testRunner.Given("the credentials and over16Box \'true\' and termsBox \'true\' to submit the form", ((string)(null)), table5, "Given ");
+ testRunner.Given("the credentials and over16Box \'true\' and termsBox \'true\' to submit the form", ((string)(null)), table4, "Given ");
 #line hidden
 #line 57
  testRunner.When("user goes to the News page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");

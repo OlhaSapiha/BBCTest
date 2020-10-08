@@ -143,20 +143,20 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
                             "titles"});
-                table6.AddRow(new string[] {
+                table5.AddRow(new string[] {
                             "NY black man killed in police \'spit hood\' restraint"});
-                table6.AddRow(new string[] {
+                table5.AddRow(new string[] {
                             "Dwayne \'The Rock\' Johnson and family had Covid-19"});
-                table6.AddRow(new string[] {
+                table5.AddRow(new string[] {
                             "Russian opposition leader \'poisoned with Novichok\'"});
-                table6.AddRow(new string[] {
+                table5.AddRow(new string[] {
                             "\'I\'m gonna go finish feeding my daughter\'"});
-                table6.AddRow(new string[] {
+                table5.AddRow(new string[] {
                             "Australia \'anti-lockdown\' arrest stirs controversy"});
 #line 11
- testRunner.Given("the expected text of second articles", ((string)(null)), table6, "Given ");
+ testRunner.Given("the expected text of second articles", ((string)(null)), table5, "Given ");
 #line hidden
 #line 18
  testRunner.When("user goes to the News page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
